@@ -167,152 +167,185 @@
         </div>
 
         <!-- Dashboard Section (Hidden initially) -->
-        <div id="dashboard" class="flex flex-col gap-8 opacity-0 transition-opacity duration-1000 hidden">
+        <div id="dashboard" class="flex flex-col md:flex-row gap-6 opacity-0 transition-opacity duration-1000 hidden">
+            <!-- Left Ad Sidebar -->
+            <aside
+                class="hidden md:flex flex-col items-center justify-start pt-8 w-[170px] shrink-0 sticky top-4 h-fit">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': 'a275feef49f6106be3943b23c4304295',
+                        'format': 'iframe',
+                        'height': 600,
+                        'width': 160,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="https://yawncollaremotion.com/a275feef49f6106be3943b23c4304295/invoke.js"></script>
+            </aside>
 
-            <!-- Real-time Age Hero -->
-            <section class="w-full">
-                <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden group">
-                    <div
-                        class="absolute top-0 right-0 p-40 bg-blue-500/10 blur-[100px] rounded-full pointer-events-none group-hover:bg-blue-500/20 transition-all duration-1000">
-                    </div>
+            <!-- Main Content -->
+            <div class="flex-1 flex flex-col gap-8">
 
-                    <h2 class="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">Real-time Age</h2>
+                <!-- Real-time Age Hero -->
+                <section class="w-full">
+                    <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 p-40 bg-blue-500/10 blur-[100px] rounded-full pointer-events-none group-hover:bg-blue-500/20 transition-all duration-1000">
+                        </div>
 
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center md:text-left">
-                        <div class="flex flex-col">
-                            <span id="age-years"
-                                class="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Years</span>
-                        </div>
-                        <div class="flex flex-col border-l border-white/5 pl-6 md:border-none md:pl-0">
-                            <span id="age-months"
-                                class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-200 font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Months</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span id="age-days"
-                                class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-200 font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Days</span>
-                        </div>
-                        <!-- Divider for mobile wrap -->
-                        <div class="hidden md:block lg:hidden w-full col-span-3 h-px bg-white/5 my-2"></div>
+                        <h2 class="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-6">Real-time Age
+                        </h2>
 
-                        <div class="flex flex-col pl-6 border-l border-white/5 lg:border-none lg:pl-0">
-                            <span id="age-hours"
-                                class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-300 font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Hours</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span id="age-mins"
-                                class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-300 font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Minutes</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span id="age-secs"
-                                class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 font-mono tabular-nums leading-none mb-2">00</span>
-                            <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Seconds</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center md:text-left">
+                            <div class="flex flex-col">
+                                <span id="age-years"
+                                    class="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Years</span>
+                            </div>
+                            <div class="flex flex-col border-l border-white/5 pl-6 md:border-none md:pl-0">
+                                <span id="age-months"
+                                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-200 font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Months</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span id="age-days"
+                                    class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-200 font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Days</span>
+                            </div>
+                            <!-- Divider for mobile wrap -->
+                            <div class="hidden md:block lg:hidden w-full col-span-3 h-px bg-white/5 my-2"></div>
 
-            <!-- Stats Grid -->
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Birthday Countdown -->
-                <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
-                    <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-slate-300 font-medium">Next Birthday</h3>
-                        <div class="p-2 bg-purple-500/10 rounded-lg text-purple-400">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="flex items-baseline gap-2">
-                        <span id="bday-days" class="text-3xl font-bold text-white font-mono">0</span>
-                        <span class="text-slate-500 text-sm">Days Remaining</span>
-                    </div>
-                    <p id="bday-date" class="text-xs text-slate-400 mt-2 font-mono">Date: ...</p>
-                    <div id="bday-confetti" class="hidden absolute inset-0 pointer-events-none"></div>
-                </div>
-
-                <!-- Bio Stats: Heartbeats -->
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-slate-300 font-medium">Total Heartbeats</h3>
-                        <div class="p-2 bg-red-500/10 rounded-lg text-red-400">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                                </path>
-                            </svg>
+                            <div class="flex flex-col pl-6 border-l border-white/5 lg:border-none lg:pl-0">
+                                <span id="age-hours"
+                                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-300 font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Hours</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span id="age-mins"
+                                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-300 font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Minutes</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span id="age-secs"
+                                    class="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 font-mono tabular-nums leading-none mb-2">00</span>
+                                <span class="text-slate-500 text-xs font-medium uppercase tracking-wider">Seconds</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-baseline gap-2">
-                        <span id="stats-heart" class="text-2xl font-bold text-white font-mono tracking-tight">0</span>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2">Est. based on 80 bpm avg.</p>
-                </div>
+                </section>
 
-                <!-- Bio Stats: Breaths -->
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="flex items-start justify-between mb-4">
-                        <h3 class="text-slate-300 font-medium">Total Breaths</h3>
-                        <div class="p-2 bg-teal-500/10 rounded-lg text-teal-400">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                </path>
-                            </svg>
+                <!-- Stats Grid -->
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Birthday Countdown -->
+                    <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-slate-300 font-medium">Next Birthday</h3>
+                            <div class="p-2 bg-purple-500/10 rounded-lg text-purple-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span id="bday-days" class="text-3xl font-bold text-white font-mono">0</span>
+                            <span class="text-slate-500 text-sm">Days Remaining</span>
+                        </div>
+                        <p id="bday-date" class="text-xs text-slate-400 mt-2 font-mono">Date: ...</p>
+                        <div id="bday-confetti" class="hidden absolute inset-0 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Bio Stats: Heartbeats -->
+                    <div class="glass-card p-6 rounded-2xl">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-slate-300 font-medium">Total Heartbeats</h3>
+                            <div class="p-2 bg-red-500/10 rounded-lg text-red-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span id="stats-heart"
+                                class="text-2xl font-bold text-white font-mono tracking-tight">0</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-2">Est. based on 80 bpm avg.</p>
+                    </div>
+
+                    <!-- Bio Stats: Breaths -->
+                    <div class="glass-card p-6 rounded-2xl">
+                        <div class="flex items-start justify-between mb-4">
+                            <h3 class="text-slate-300 font-medium">Total Breaths</h3>
+                            <div class="p-2 bg-teal-500/10 rounded-lg text-teal-400">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span id="stats-breath"
+                                class="text-2xl font-bold text-white font-mono tracking-tight">0</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-2">Est. based on 16 bpm avg.</p>
+                    </div>
+                </section>
+
+                <!-- Grid Visualization -->
+                <section class="w-full mt-4">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            Life in Weeks
+                            <span
+                                class="text-xs font-normal text-slate-500 ml-2 bg-slate-800 px-2 py-0.5 rounded border border-slate-700">90
+                                Years Horizon</span>
+                        </h2>
+                        <div id="percentage-badge"
+                            class="px-3 py-1 bg-blue-600/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/20">
+                            0% Lived
                         </div>
                     </div>
-                    <div class="flex items-baseline gap-2">
-                        <span id="stats-breath" class="text-2xl font-bold text-white font-mono tracking-tight">0</span>
-                    </div>
-                    <p class="text-xs text-slate-500 mt-2">Est. based on 16 bpm avg.</p>
-                </div>
-            </section>
 
-            <!-- Grid Visualization -->
-            <section class="w-full mt-4">
-                <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-lg font-semibold text-white flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-                        Life in Weeks
-                        <span
-                            class="text-xs font-normal text-slate-500 ml-2 bg-slate-800 px-2 py-0.5 rounded border border-slate-700">90
-                            Years Horizon</span>
-                    </h2>
-                    <div id="percentage-badge"
-                        class="px-3 py-1 bg-blue-600/10 text-blue-400 text-xs font-bold rounded-full border border-blue-500/20">
-                        0% Lived
+                    <div id="grid-container"
+                        class="grid grid-cols-[repeat(52,minmax(0,1fr))] gap-[2px] w-full sm:gap-1">
+                        <!-- Javascript populates this -->
                     </div>
-                </div>
 
-                <div id="grid-container" class="grid grid-cols-[repeat(52,minmax(0,1fr))] gap-[2px] w-full sm:gap-1">
-                    <!-- Javascript populates this -->
-                </div>
-
-                <!-- Legend -->
-                <div class="flex gap-6 mt-6 text-xs justify-center md:justify-start">
-                    <div class="flex items-center gap-2">
-                        <div class="w-3 h-3 bg-blue-600 rounded-sm"></div>
-                        <span class="text-slate-400">Lived</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-3 h-3 bg-white animate-pulse rounded-sm shadow-[0_0_8px_rgba(255,255,255,0.6)]">
+                    <!-- Legend -->
+                    <div class="flex gap-6 mt-6 text-xs justify-center md:justify-start">
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-3 bg-blue-600 rounded-sm"></div>
+                            <span class="text-slate-400">Lived</span>
                         </div>
-                        <span class="text-slate-300 font-medium">This Week</span>
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="w-3 h-3 bg-white animate-pulse rounded-sm shadow-[0_0_8px_rgba(255,255,255,0.6)]">
+                            </div>
+                            <span class="text-slate-300 font-medium">This Week</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-3 h-3 bg-slate-800 rounded-sm border border-slate-700"></div>
+                            <span class="text-slate-500">Future</span>
+                        </div>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-3 h-3 bg-slate-800 rounded-sm border border-slate-700"></div>
-                        <span class="text-slate-500">Future</span>
-                    </div>
-                </div>
-            </section>
+                </section>
 
+                <!-- Ad Section -->
+                <section class="w-full flex justify-center py-6 mt-4">
+                    <script async="async" data-cfasync="false"
+                        src="https://yawncollaremotion.com/4601281df126f9a54d42081db4e7a058/invoke.js"></script>
+                    <div id="container-4601281df126f9a54d42081db4e7a058"></div>
+                </section>
+                <script async="async" data-cfasync="false" src="https://yawncollaremotion.com/4601281df126f9a54d42081db4e7a058/invoke.js"></script>
+<div id="container-4601281df126f9a54d42081db4e7a058"></div>
+
+            </div>
         </div>
     </main>
 
@@ -627,28 +660,6 @@
         init();
 
     </script>
-    <script>
-  atOptions = {
-    'key' : 'a275feef49f6106be3943b23c4304295',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://yawncollaremotion.com/a275feef49f6106be3943b23c4304295/invoke.js"></script>
-    <script src="https://yawncollaremotion.com/a9/ef/da/a9efda6232bb15069f3f48571f3d0f23.js"></script>
-    <script>
-  atOptions = {
-    'key' : 'a275feef49f6106be3943b23c4304295',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://yawncollaremotion.com/a275feef49f6106be3943b23c4304295/invoke.js"></script>
 </body>
-
 
 </html>
